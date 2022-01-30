@@ -2174,6 +2174,14 @@ function Input(props) {
     }
   }
 
+  function handleRemove(e) {
+    e.preventDefault();
+    setToDelete(e);
+    setAges(ages.filter(function (prevAge) {
+      return prevAge !== age;
+    }));
+  }
+
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
       name: "age",
@@ -2192,11 +2200,7 @@ function Input(props) {
       id: id,
       className: "remove-person",
       onClick: function onClick(e) {
-        e.preventDefault();
-        setToDelete(e);
-        setAges(ages.filter(function (prevAge) {
-          return prevAge !== age;
-        }));
+        return handleRemove(e);
       },
       children: "Remove"
     })]

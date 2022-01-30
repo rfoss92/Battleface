@@ -17,9 +17,3 @@ use Illuminate\Http\Request;
 Route::get('/', function () {
     return view('quotation');
 });
-
-Route::post('count', function (Request $request) {
-    return response()->json([
-        'message' => $request->message,
-    ]);
-});
