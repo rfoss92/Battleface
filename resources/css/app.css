@@ -1,0 +1,55 @@
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.page-centered {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 220px;
+    margin-bottom: 32px;
+    border: 1px solid #d3d3d3;
+    border-radius: 6px;
+    padding: 16px;
+    box-shadow: none;
+}
+
+input:focus {
+    outline: none !important;
+    border:1px solid rgb(249, 159, 81);
+}
+
+button {
+    min-width: 255px;
+    color: #fff;
+    background-color: #ffa02f;
+    box-shadow: 0 10px 40px -10px rgba(255,107,1,.5);
+    border: 1px solid #ffa02f;
+    height: 58px;
+    line-height: 58px;
+    padding: 0 70px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 32px;
+    background-color: #ffa02f;
+    text-align: center;
+    cursor: pointer;
+}
+
+.remove-person {
+    width: 100px !important;
+    min-width: 0;
+    padding: 0;
+    margin-left: 24px;
+}
